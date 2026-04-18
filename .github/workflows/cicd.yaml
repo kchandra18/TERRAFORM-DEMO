@@ -13,7 +13,6 @@ terraform:
 name: Terraform Workflow
 runs-on: ubuntu-latest   # Uses a Linux runner
 
-```
 env:
   AWS_REGION: us-east-1  # Change to your AWS region
 
@@ -50,4 +49,4 @@ steps:
   - name: Terraform Apply
     if: github.ref == 'refs/heads/main'
     run: terraform apply -auto-approve tfplan
-```
+
